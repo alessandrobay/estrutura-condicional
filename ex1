@@ -1,0 +1,29 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Programa {
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double n;
+
+		System.out.println(" digite um número.");
+
+		n = sc.nextDouble();
+
+		if (n > 0.0) {
+			double a = Math.sqrt(n);
+			System.out.println(a);
+		} else {
+			double a = Math.pow(n, 2);
+			System.out.println(a);
+		}
+
+		sc.close();
+	}
+
+}
