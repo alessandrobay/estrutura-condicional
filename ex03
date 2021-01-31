@@ -1,0 +1,27 @@
+package aplicacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		String valor = JOptionPane.showInputDialog("informe o número");
+		int num = Integer.parseInt(valor);
+
+		if (num % 2 == 0) {
+			System.out.println(" par");
+		}
+
+		if (num % 2 == 1) {
+			System.out.println("impar");
+		}
+
+		sc.close();
+	}
+}
